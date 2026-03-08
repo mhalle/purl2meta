@@ -8,11 +8,44 @@ version = "0.1.0"
 description = "Resolve Package URLs to registry metadata API URLs"
 requires-python = ">=3.8"
 license = "MIT"
+readme = "README.md"
+authors = [
+    { name = "Michael Halle", email = "mhalle@bwh.harvard.edu" },
+]
+keywords = [
+    "package-url",
+    "purl",
+    "metadata",
+    "package-manager",
+    "registry",
+    "sbom",
+    "spdx",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: System :: Software Distribution",
+]
 dependencies = ["packageurl-python"]
 
 [project.optional-dependencies]
 fetch = ["httpx"]
 test = ["pytest", "httpx"]
+
+[project.urls]
+Homepage = "https://github.com/mhalle/purl2meta"
+Repository = "https://github.com/mhalle/purl2meta"
+Issues = "https://github.com/mhalle/purl2meta/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/purl2meta"]
