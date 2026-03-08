@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "purl2meta"
-version = "0.1.0"
+version = "0.1.1"
 description = "Resolve Package URLs to registry metadata API URLs"
 requires-python = ">=3.8"
 license = "MIT"
